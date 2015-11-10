@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BoundaryDestroy : MonoBehaviour
@@ -5,8 +6,11 @@ public class BoundaryDestroy : MonoBehaviour
 
     // Use this for initialization
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+        if (other.tag == "border")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
