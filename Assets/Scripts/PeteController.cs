@@ -9,6 +9,7 @@ namespace Assets.Scripts
         public AudioClip FlapClip;
         private AudioSource poopSound;
         private AudioSource flapSound;
+        public GameObject explosion;
 
         public AudioSource AddAudio(AudioClip clip, bool loop = false, bool playAwake= false, float vol = 1f)
         {

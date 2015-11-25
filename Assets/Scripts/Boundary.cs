@@ -6,8 +6,8 @@ namespace Assets.Scripts
     public class Boundary
     {
         public float xMin;
-        public float zMin;
+        public float yMin;
         public float xMax;
-        public float zMax;
+        public float yMax;
     }
 }
